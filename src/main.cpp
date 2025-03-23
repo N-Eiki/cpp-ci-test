@@ -1,7 +1,6 @@
 #include "hello.hpp"
 
 int main() {
-    // add typo
-    say_hellooooo();
+    say_hello();
     return 0;
 }
