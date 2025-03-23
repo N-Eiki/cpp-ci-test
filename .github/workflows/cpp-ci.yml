@@ -16,12 +16,12 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
 
-      - name: setup CMake
-        runs: |
+      - name: setup CMake and build
+        run: |
           mkdir build
           cd build
           cmake ..
           make
 
-      # - name: execute
-      #   run: ./build/main
+      - name: execute
+        run: ./build/main
